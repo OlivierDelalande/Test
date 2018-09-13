@@ -9,12 +9,12 @@ class GenerateOutput {
         this.removeLastEntry(Obj, entries[0]);
         let newEntryKey = entries[0].split('.');
         this.addNewEntry(Obj, newEntryKey, entries[1]);
-        console.log(Obj);
         return Obj;
     }
 
     getObjectEntries (Obj) {
         let entries =  Object.entries(Obj);
+        
         return entries[entries.length-1];
     }
 
